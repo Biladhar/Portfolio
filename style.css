@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 html{
     scroll-behavior: smooth;
 }
@@ -51,6 +52,7 @@ home page styles */
     position: absolute;
     max-width: 100%;
     min-height:100%;
+    object-fit: cover;
     filter:brightness(50%);
 }
 
@@ -181,5 +183,5 @@ aboutMe styles */
     55% { content: 'ABO'; }
     75% { content: 'ABOU'; }
     85% { content: 'ABOUT'; }
-    95% { content: 'ABOUT M'; }
-    100%  { content:'ABOUT ME :'; }}
+    95% { content: 'ABOUT U'; }
+    100%  { content:'ABOUT US :'; }}
