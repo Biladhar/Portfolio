@@ -3,4 +3,123 @@
     padding: 0;
 }
 
+nav {
+    width: 100%;
+    position:fixed ;    
+    color: white;
+    background-color: rgba(135, 193, 205, 0.305) ;
+    display: flex;
+    height: 7%;
+    font-family:cursive;
+    font-weight: bolder;
+    justify-content: space-around;
+    box-shadow:0px 0px 30px   #6ec7e0;
+}
 
+nav li{
+    list-style: none;
+    padding: 20px;
+    float:inline-start;
+}
+
+
+.logo{
+    width: 60px; 
+}
+
+.videobackground {
+    z-index: -10;
+    position: absolute;
+    max-width: 100%;
+    max-height: auto;
+    /* clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%); */
+}
+
+
+
+
+
+.home {   
+    overflow: hidden;
+    color: black;
+    height: 100vh;
+    width: 100%; 
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    gap: 30px;
+    
+}
+
+/* .home::before{
+    position: absolute;
+    z-index:-1 ;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255, 0.3);
+} */
+.home h3{
+    text-align: center; 
+    text-shadow: 0 0 3px  lightblue;
+} 
+
+
+.hello{
+    padding-bottom: 30px;
+    color: #6ec7e0;
+    overflow: hidden; 
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+        typed 3.5s steps(40, end) infinite; 
+        font-family: "Silkscreen", sans-serif;
+        font-weight: 400;
+        font-size: 2rem;   
+}
+
+@keyframes typed{
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color:#6ec7e0;
+    }
+}
+
+button{
+    width:115px;
+    height:5%;
+    color:#6ec7e0;
+    background: none;
+    border-radius: 12px;
+    border:1px solid #6ec7e0;
+    font-family: "Silkscreen", sans-serif;
+        font-style: normal;  
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover{
+    background-color:hsl(193, 20%, 20%);
+}
+
+.name,.dev{
+    color: white;
+    font-size: 2rem;
+}
