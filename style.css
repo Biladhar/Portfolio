@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 /* nav bar style */
 
@@ -9,7 +12,7 @@ nav {
     width: 100%;
     position:fixed ;    
     color: white;
-    background-color: #1e4d56e6 ;
+    background-color: #0a0b0aec;
     display: flex;
     height: 60px;
     font-family: "Protest Riot", sans-serif;
@@ -22,6 +25,11 @@ nav li{
     padding: 20px;
     float:inline-start;
     cursor: pointer;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
 }
 
 
@@ -155,3 +163,23 @@ aboutMe styles */
     font-family: "Protest Riot", sans-serif;
     text-align: center;
 }
+
+.title::after{
+    animation-name: dotty ;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-timing-function: step-end;
+    animation-fill-mode: forwards;
+    content: ' ';
+    font-family:Silkscreen; 
+    font-size: 2rem;
+}
+@keyframes dotty{
+    0%   { content: ''; }
+    20% { content: 'A'; }
+    35%  { content: 'AB'; }
+    55% { content: 'ABO'; }
+    75% { content: 'ABOU'; }
+    85% { content: 'ABOUT'; }
+    95% { content: 'ABOUT M'; }
+    100%  { content:'ABOUT ME :'; }}
