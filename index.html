@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bahianita&family=Protest+Riot&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bahianita&family=Protest+Riot&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
@@ -47,6 +48,107 @@
         </div>
     </section>
     <section class="skill">
+        <div class="container-fluid">
+            <div class="row ">
+                <p class="theDragon" >The dragons</p>
+            </div>
+            <div class="row" >
+                <div class="col theTeam">
+                    <div class="player1">
+                        <img onclick="showSkills(0)" src="./asset/p1.jpg" alt="p1">
+                        <h2>Najem Eddine Hamdi</h2>
+                    </div>
+                    <div class="player1">
+                        <img onclick="showSkills(1)" src="./asset/p2.jpg" alt="p1">
+                        <h2>Yassin Daira</h2>
+                    </div>
+                    <div class="player1">
+                        <img onclick="showSkills(2)"src="./asset/p3.jpg" alt="p1">
+                        <h2>Bilel Laadhar</h2>
+                    </div>
+                    <div class="player1">
+                        <img onclick="showSkills(3)" src="./asset/p4.jpg" alt="p1">
+                        <h2>Iheb Mechi</h2>
+                    </div>
+                    <div class="player1">
+                        <img onclick="showSkills(4)"src="./asset/p5.jpg" alt="p1">
+                        <h2>Omar Zalila</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row hiRow" id="skillsBox">
+                <div class="col-md-6 hicol leftcol">
+                    <h1>Skills</h1>
+                    <div class="progressBox">
+                        <div class="meta">
+                            <div class="language" >HTML</div>
+                            <div class="value" id="htmlValue">80%</div>
+                        </div>
+                        <div class="progressBg">
+                            <div class="progressBar" id="htmlbg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progressBox">
+                        <div class="meta">
+                            <div class="language" >CSS</div>
+                            <div class="value" id="cssValue">80%</div>
+                        </div>
+                        <div class="progressBg">
+                            <div class="progressBar" id="cssbg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progressBox">
+                        <div class="meta">
+                            <div class="language" >JavaScript</div>
+                            <div class="Value" id="jsValue" >80%</div>
+                        </div>
+                        <div class="progressBg">
+                            <div class="progressBar" id="jsbg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progressBox">
+                        <div class="meta">
+                            <div class="language" >python</div>
+                            <div class="value " >Loading</div>
+                        </div>
+                        <div class="progressBg">
+                            <div class="progressBar others">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progressBox">
+                        <div class="meta">
+                            <div class="language" >Mern</div>
+                            <div class="value" >Loading</div>
+                        </div>
+                        <div class="progressBg">
+                            <div class="progressBar others">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progressBox">
+                        <div class="meta">
+                            <div class="language" >Java</div>
+                            <div class="value" >Loading</div>
+                        </div>
+                        <div class="progressBg">
+                            <div class="progressBar others">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 border rightcol">
+                    <h1>About me</h1>
+
+                    <p id="narrative"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim nesciunt culpa, molestias earum dicta explicabo maxime consequuntur aliquid doloremque ad excepturi exercitationem. Quis, blanditiis? Quasi, expedita. Quod vero magni perferendis?</p>
+
+                </div>
+            </div>
+        </div>
 
     </section>
     <section class="project">

@@ -195,3 +195,170 @@ aboutMe styles */
     85% { content: 'ABOUT'; }
     95% { content: 'ABOUT U'; }
     100%  { content:'ABOUT US :'; }}
+
+
+    /* the Teams section */
+    /* the dragons */
+
+.skill{
+    background-color: #567983;
+}
+
+.theDragon{
+    text-align: center;
+    font-size: 4rem;
+    font-family: silkscreen;
+}
+
+
+/* .theDragon::after{
+    text-align: center;
+    font-family: silkscreen;
+    animation-name: dragons ;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-timing-function: step-end;
+    animation-fill-mode: forwards;
+    content: ' ';
+
+}
+
+@keyframes dragons{
+    0%   { content: ''; }
+    7.6% { content: 'T'; }
+    15.2%  { content: 'TH'; }
+    22.8% { content: 'THE'; }
+    30.4% { content: 'THE '; }
+    38% { content: 'THE D'; }
+    45.6% { content: 'THE DR'; }
+    53.2%  { content:'THE DRA'; }
+    60.8%  { content:'THE DRAG'; }
+    68.4%  { content:'THE DRAG'; }
+    76%  { content:'THE DRAGO'; }
+    83.6%  { content:'THE DRAGON'; }
+    100%  { content:'THE DRAGONS'; }
+} */
+
+.theTeam{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+.theTeam img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.player1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* hidden skills */
+
+.hicol .progressBox{
+    width: 100%;
+}
+
+.hiRow{
+    padding: 10px;
+}
+
+.leftcol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 60px 0px;
+
+}
+
+.progressBox .language{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(13, 13, 14);
+}
+
+
+.progressBox .progressBg{
+    height: 20px;
+    width: 100%;
+    background-color: #d3d3d3;
+    border-radius: 6px;
+}
+
+.progressBar{
+    opacity: 0;
+    animation: progress 2s ;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes progress {
+    0%{
+        width: 0;
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#htmlbg{
+    background-color: #91381f;
+    height: 20px;
+    width: 80%;
+    border-radius: 6px;
+}
+
+#cssbg{
+    background-color: #94c426;
+    height: 20px;
+    width: 80%;
+    border-radius: 6px;
+}
+
+#jsbg{
+    background-color: #226abd;
+    height: 20px;
+    width: 80%;
+    border-radius: 6px;
+}
+
+.meta{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.value{
+    text-align: right;
+    font-size: 16px;
+}
+
+#skillsBox{
+    display: none;
+}
+
+.others {
+    background-image: url(https://miro.medium.com/v2/resize:fit:679/1*ngNzwrRBDElDnf2CLF_Rbg.gif);
+    background-position: 5px 3px;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    padding: 9px 21px 10px 15px;
+}
+
+.rightcol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 60px 0;
+}
