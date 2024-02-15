@@ -124,8 +124,8 @@ home page styles */
     }
 }
 
-button{
-    width:115px;
+.button1{
+    width: 140px;
     height:50px;
     color:#6ec7e0;
     background: none;
@@ -171,17 +171,18 @@ aboutMe styles */
     gap: 10px;
 }
 
-.dragon{
+/* .dragon{
     width: 250px;
     height: 300px;
     border-radius: 15px;
     border: black solid 2px;
-}
+} */
 
 .description{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: "Protest Riot", sans-serif;
     text-align: center;
+    color: black;
 }
 
 .title::after{
@@ -193,7 +194,8 @@ aboutMe styles */
     animation-fill-mode: forwards;
     content: ' ';
     font-family:Silkscreen; 
-    font-size: 2rem;
+    font-size: 3rem;
+    color:black;
 }
 @keyframes Visitor{
     0%   { content: ''; }
@@ -650,10 +652,10 @@ img{
     width: 300px;
     border-radius: 12px;
 }
-.name{
+.nameproject{
     display: flex;
     justify-content:center ;
-    color: #00ccff;
+    color: #000000;
     font-family:Silkscreen;
     height: 60px;
 }
@@ -691,6 +693,9 @@ main{
     overflow: hidden;
 }
 
+body.darkmode--activated .box{
+    background-color: gray;
+}
 
 
 
@@ -705,7 +710,7 @@ main{
 }
 
 body.darkmode--activated .box::after{
-    background-image:conic-gradient(transparent,transparent,transparent,#db1919) ;
+    background-image:conic-gradient(transparent,transparent,transparent,#ce0000e6) ;
 }
 
 .box::before{
@@ -717,7 +722,7 @@ body.darkmode--activated .box::after{
     animation: animate 4s linear infinite;
 }
 body.darkmode--activated .box::before{
-    background-image: conic-gradient(transparent,transparent,transparent,#ff0000);
+    background-image: conic-gradient(transparent,transparent,transparent,#ce0000e6);
 }
 
 
@@ -730,12 +735,16 @@ body.darkmode--activated .box::before{
         transform: rotate(360deg);
     }
 }
-.name::after{
+.nameproject::after{
     animation-name: dotty ;
     animation-duration: 10s;
     animation-fill-mode: forwards;
     content: '';
     font-size: 50px;
+}
+
+body.darkmode--activated .nameproject{
+    color: black;
 }
 
 @keyframes dotty {
@@ -761,9 +770,6 @@ body.darkmode--activated .box::before{
 }
 
 body.darkmode--activated span {
-    background-color: #91381f;
+    background-color: #944129;
 }
 
-p{
-    color: white;
-}
