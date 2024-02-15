@@ -759,7 +759,7 @@ main{
 }
 
 body.darkmode--activated .box{
-    background-color: gray;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 
@@ -775,7 +775,7 @@ body.darkmode--activated .box{
 }
 
 body.darkmode--activated .box::after{
-    background-image:conic-gradient(transparent,transparent,transparent,#ce0000e6) ;
+    background-image:conic-gradient(transparent,transparent,transparent,#ffffffe6) ;
 }
 
 .box::before{
@@ -787,7 +787,7 @@ body.darkmode--activated .box::after{
     animation: animate 4s linear infinite;
 }
 body.darkmode--activated .box::before{
-    background-image: conic-gradient(transparent,transparent,transparent,#ce0000e6);
+    background-image: conic-gradient(transparent,transparent,transparent,#ffffffe6);
 }
 
 
@@ -829,7 +829,7 @@ body.darkmode--activated .nameproject{
     position: absolute;
     inset: 5px;
     border-radius: 16px;
-    background: #0c1022;
+    background: #1e353c;
     z-index: 1; 
     padding: 20px 20px 20px 20px;
 }
@@ -838,3 +838,6 @@ body.darkmode--activated span {
     background-color: #944129;
 }
 
+.whitep{
+    color: white;
+}
