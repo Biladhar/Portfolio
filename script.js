@@ -137,4 +137,3 @@ function colorText(element){
     }else element.style.color="rgb(110, 199, 224)";
 }
 // end contact section script 
-
