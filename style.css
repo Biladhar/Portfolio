@@ -4,7 +4,7 @@
 }
 
 html{
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 
 /* nav bar style */
@@ -124,8 +124,8 @@ home page styles */
     }
 }
 
-button{
-    width:115px;
+.button1{
+    width: 140px;
     height:50px;
     color:#6ec7e0;
     background: none;
@@ -171,17 +171,18 @@ aboutMe styles */
     gap: 10px;
 }
 
-.dragon{
+/* .dragon{
     width: 250px;
     height: 300px;
     border-radius: 15px;
     border: black solid 2px;
-}
+} */
 
 .description{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: "Protest Riot", sans-serif;
     text-align: center;
+    color: black;
 }
 
 .title::after{
@@ -193,7 +194,8 @@ aboutMe styles */
     animation-fill-mode: forwards;
     content: ' ';
     font-family:Silkscreen; 
-    font-size: 2rem;
+    font-size: 3rem;
+    color:black;
 }
 @keyframes Visitor{
     0%   { content: ''; }
@@ -284,7 +286,7 @@ aboutMe styles */
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    padding: 60px 0px;
+    padding: 160px
 
 }
 
@@ -299,8 +301,8 @@ aboutMe styles */
 .progressBox .progressBg{
     height: 20px;
     width: 100%;
-    background-color: #d3d3d3;
-    border-radius: 6px;
+    background-color: #f0ebeb;
+    border-radius: 20px;
 }
 
 .progressBar{
@@ -322,24 +324,34 @@ aboutMe styles */
 }
 
 #htmlbg{
-    background-color: #91381f;
+    background-color: #2c2c2c;
     height: 20px;
     width: 80%;
-    border-radius: 6px;
+    border-radius: 20px;
 }
 
 #cssbg{
-    background-color: #94c426;
+    background-color: #2c2c2c;
     height: 20px;
     width: 80%;
-    border-radius: 6px;
+    border-radius: 20px;
 }
 
 #jsbg{
-    background-color: #226abd;
+    background-color: #2c2c2c;
     height: 20px;
     width: 80%;
-    border-radius: 6px;
+    border-radius: 20px;
+}
+
+body.darkmode--activated{
+    #htmlbg{
+    background-color: white ;
+    }#cssbg{
+        background-color: white ;
+    }#jsbg{
+        background-color: white ;
+    }
 }
 
 .meta{
@@ -351,6 +363,7 @@ aboutMe styles */
 .value{
     text-align: right;
     font-size: 16px;
+    font-weight: 600;
 }
 
 #skillsBox{
@@ -372,6 +385,30 @@ aboutMe styles */
     gap: 30px;
     padding: 60px 0;
 }
+
+#narrative{
+    font-size: 22px;
+    background-color: #1e353c3f;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.member img{
+    width: 250px;
+    height: 280px;
+    border: 2px solid black;
+}
+.member{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+/* end of Team section */
 
     /* 100%  { content:'ABOUT US :'; } */
 
@@ -665,4 +702,139 @@ gap: 70px;
     background-color: #38626F;
 }
 /* end contact section  */
+
+/* start of projects section */
+
+
+.project{
+    background-color: #567983;
+    padding: 20px 0px;
+}
+
+
+
+img{
+    width: 300px;
+    border-radius: 12px;
+}
+.nameproject{
+    display: flex;
+    justify-content:center ;
+    color: #000000;
+    font-family:Silkscreen;
+    height: 60px;
+}
+main{
+    border: 1px #00ccff;
+}    
+.end{
+    display: flex;
+    justify-content: space-around;
+    align-self: normal;
+    flex-wrap: wrap;
+}
+.a{
+    color: #00ccff;;
+    font-family: cursive;
+}
+.box{
+    border-style: ridge;
+    border-color: rgb(255, 255, 255);
+    border: 1px black;
+    box-shadow: 10px 10px 10px  black;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 20px;
+    margin-top: 30px;
+    height: 350px;
+    width: 350px;
+    border-radius: 20px;
+    position: relative;
+    background:black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+body.darkmode--activated .box{
+    background-color: gray;
+}
+
+
+
+.box::after{
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent,transparent,transparent,#00ccff);
+    animation: animate 4s linear infinite;
+    animation-delay: -2s;
+}
+
+body.darkmode--activated .box::after{
+    background-image:conic-gradient(transparent,transparent,transparent,#ce0000e6) ;
+}
+
+.box::before{
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent,transparent,transparent,#00ccff);
+    animation: animate 4s linear infinite;
+}
+body.darkmode--activated .box::before{
+    background-image: conic-gradient(transparent,transparent,transparent,#ce0000e6);
+}
+
+
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.nameproject::after{
+    animation-name: dotty ;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    content: '';
+    font-size: 50px;
+}
+
+body.darkmode--activated .nameproject{
+    color: black;
+}
+
+@keyframes dotty {
+    0%   { content: ''; }
+    10%    { content: 'P'; }
+    20%  { content: 'PR'; }
+    30%  { content: 'PRO'; }
+    40%  { content: 'PROJ'; }
+    50%  { content: 'PROJE'; }
+    60%  { content: 'PROJEC'; }
+    70%  { content: 'PROJECT'; }
+    80%  { content: 'PROJECT. '; }
+    90%  { content: 'PROJECT. . '; }
+    100%  { content: 'PROJECT. . . '; } 
+}
+.box span{
+    position: absolute;
+    inset: 5px;
+    border-radius: 16px;
+    background: #0c1022;
+    z-index: 1; 
+    padding: 20px 20px 20px 20px;
+}
+
+body.darkmode--activated span {
+    background-color: #944129;
+}
 
