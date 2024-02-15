@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+// <<<<<<< HEAD
 
 
 var htmlNum = [30, 20, 90, 60, 60];
@@ -90,8 +91,45 @@ function showSkills(i){
             document.getElementById('jsValue').innerText = jsNum[4] + "%";
             document.getElementById('jsbg').style.width = jsNum[4] + "%";
             break;
-                  
+            
         default:
-          statements
-      }
+        statements
+    }
 }
+
+
+
+// contact section script 
+function increase(index){
+    var y=document.querySelector(".label" + index);
+    y.style.top='-10px'
+}
+function changeImg(element){
+    if(element.src.includes("linkedin")){
+        if(element.src.includes("linkedin.png")){
+        element.style.backgroundColor ="#38626F";
+        element.src="./asset/images/linkedin-black.png";
+        }
+        else{
+        element.src="./asset/images/linkedin.png"
+        element.style.backgroundColor="#1E353C"
+        }
+    }else {
+        if(element.src.includes("Github.png")){
+            element.style.backgroundColor ="#38626F";
+            element.src="./asset/images/Github-black.png";
+            }
+            else{
+            element.src="./asset/images/Github.png"
+            element.style.backgroundColor="#1E353C"
+            }
+    }
+}
+function colorText(element){
+    console.log("color : " , element.style.color);
+    if(element.style.color=="rgb(110, 199, 224)"){
+    element.style.color="rgb(255, 255, 255)";
+    }else element.style.color="rgb(110, 199, 224)";
+}
+// end contact section script 
+// >>>>>>> 80f97e522f860c127e1c644d3fa2fcf1796547d6
