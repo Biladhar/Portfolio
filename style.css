@@ -382,10 +382,63 @@ aboutMe styles */
     animation-fill-mode: forwards;
     content: '';
 }
-body.darkmode--activated .Contact {
-    background-color: #91381f;
+body.darkmode--activated {
+    #Contact {
+    background-color:#946052 ;
     box-shadow: 0px 3px 4px #91381f;
 }
+    .form_box {
+    background-color:#91381f ;
+    box-shadow: 0px 3px 4px #91381f;
+}
+    .contact_me{
+    color: white;
+    }
+    .box_All::after{
+        background-image: conic-gradient(transparent,transparent,transparent,#946052 );
+    }
+    .box_All::before{
+        background-image: conic-gradient(transparent,transparent,transparent,#946052);
+    }
+    #email_box{
+        background-color: #946052;
+        border-color: orangered;
+    }
+    textarea{
+        background-color: #946052;
+        border-color: orangered;
+    }
+    #bord{
+        background-color: #946052;
+        border-color: orangered;
+    }
+    #all_Label{
+        color: white;
+        background-color:#946052 ;
+    }
+    .btn1{
+        color: white;
+        border-color: orangered;
+        background-color:#946052 ;
+    }
+    .box_All{
+        background-color: white;
+    }
+    button.btn1:hover{
+        background-color: orange;
+    }
+    .icon_Img2:hover{
+        background-color: #946052;
+    }
+    .icon_Img:hover{
+        background-color: #946052;
+    }
+    a:hover{
+        color: orange;
+    }
+}
+
+
 
 @keyframes dotty {
     0%   { content: ''; }
@@ -446,7 +499,7 @@ animation: animate 4s linear infinite;
 position: absolute; 
 inset: 10px;
 border-radius: 16px;
-background-color: #1E353C;;
+background-color: #1E353C;
 z-index: 1;
 }
 /* body{
@@ -455,12 +508,12 @@ width: 1000px;
 margin: 0 auto;
 text-align: center;
 } */
-.Contact{
+#Contact{
 height: 100vh;
 display: flex;
 flex-direction: column;
-justify-content: start;
-gap:2%;
+justify-content: center;
+gap:3%;
 align-items: center;
 position: relative;
 background-color: #000000;
@@ -472,6 +525,7 @@ width: 100%;
     font-style: normal;
     font-family:Silkscreen;
     height:30px;
+    margin-top: 20px;
 }
 .contact_describe{
     font-size: 20px;
@@ -481,12 +535,11 @@ width: 100%;
 .form_box{
 border-color: white;
 border-radius: 15px;
-background-color: #1E353C;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
 max-width: 650px ; 
-height: 500px;
+height: 520px;
 margin: auto;
 padding: 20px;
 overflow: hidden;
@@ -494,26 +547,27 @@ overflow: hidden;
     display: flex;
     flex-direction: column;
     width: 50%;
+    input{
+        height: 50px;
+        width: 200px;
+        background-color: #1E353C;
+        border: 2px solid #6ec7e0;
+        border-radius: 10px;
+        color: #fcf7f8;
+        font-family: cursive;
+        font-size: 15px;
+        padding: 0px 10px;
+        margin-right: 100px;
+    }
     .form_contain_detail{
         margin: 7px 0px;
         position: relative;
-        input{
-            height: 50px;
-            width: 200px;
-            background-color: #1e353c;
-            border: 2px solid #6ec7e0;
-            border-radius: 10px;
-            color: #fcf7f8;
-            font-family: cursive;
-            font-size: 15px;
-            padding: 0px 10px;
-            margin-right: 100px;
-        }
+        
         input:hover{
             border-color: white;
         }
         label{
-            background-color: #1e353c;
+            background-color: #1E353C;
             color: #6ec7e0;
             padding: 0px 2px;
             position: absolute;
@@ -534,8 +588,8 @@ overflow: hidden;
 textarea{
 width: 300px;
 height: 150px;
-padding: 0px 10px;
-background-color: #1e353c;
+padding: 10px 10px;
+background-color: #1E353C;
 border: 2px solid #6ec7e0;
 border-radius: 10px;
 color: #fcf7f8;
@@ -545,7 +599,7 @@ font-size: 15px;
 textarea:hover{
 border-color: white;
 }
-.btn{
+.btn1{
 border: 2px solid;
 border-radius: 5px;
 font-family: Silkscreen;
@@ -558,8 +612,10 @@ background-color: transparent;
 border-color: #6ec7e0;
 color: #6ec7e0;
 cursor: pointer;
+/* height: 40px; */
+
 }
-button.btn:hover{
+button.btn1:hover{
 background-color: #38626F;
 }
 .form_contain_right{
@@ -586,6 +642,9 @@ a{
     color:rgb(255, 255, 255);
     font-size: 25px;
 }
+a:hover{
+    color: rgb(110, 199, 224);
+}
 }
 .contact_icon{
 display: flex;
@@ -598,6 +657,12 @@ gap: 70px;
     width: 90px;
     height: 66px;
 }
+}
+.icon_Img2:hover{
+    background-color: #38626F;
+}
+.icon_Img:hover{
+    background-color: #38626F;
 }
 /* end contact section  */
 
