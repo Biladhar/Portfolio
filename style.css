@@ -266,13 +266,13 @@ aboutMe styles */
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 /* hidden skills */
 
 .hicol .progressBox{
-    width: 100%;
+    width: 50%;
 }
 
 .hiRow{
@@ -284,7 +284,7 @@ aboutMe styles */
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    padding: 160px
+    padding-top: 55px;
 
 }
 
@@ -381,15 +381,18 @@ body.darkmode--activated{
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    padding: 60px 0;
+    padding-top: 60px;
+
+
 }
 
 #narrative{
-    font-size: 22px;
+    font-size: 17px;
     background-color: #1e353c3f;
     padding: 10px;
     border-radius: 20px;
     font-weight: 600;
+    margin-top:15px;
 }
 
 .member img{
@@ -404,7 +407,9 @@ body.darkmode--activated{
     justify-content: space-evenly;
 }
 
-
+.finition{
+    padding-right: 160px;
+}
 
 /* end of Team section */
 
