@@ -107,7 +107,7 @@ function showSkills(i){
 // contact section script 
 function increase(index){
     var y=document.querySelector(".label" + index);
-    y.style.top='-10px'
+    y.style.top='-14px'
 }
 // function changeImg(element){
 //     if(element.src.includes("linkedin")){
