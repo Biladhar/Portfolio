@@ -3,9 +3,7 @@
     padding: 0;
 }
 
-html{
-    scroll-behavior:smooth;
-}
+
 
 /* nav bar style */
 .darkmode-toggle {
@@ -171,12 +169,9 @@ aboutMe styles */
     gap: 10px;
 }
 
-/* .dragon{
-    width: 250px;
-    height: 300px;
-    border-radius: 15px;
-    border: black solid 2px;
-} */
+.contain img{
+    border: 2px solid black
+}
 
 .description{
     font-size: 1.5rem;
@@ -194,8 +189,8 @@ aboutMe styles */
     animation-fill-mode: forwards;
     content: ' ';
     font-family:Silkscreen; 
-    font-size: 3rem;
-    color:black;
+    font-size: 4rem;
+    color:#212529;
 }
 @keyframes Visitor{
     0%   { content: ''; }
@@ -204,9 +199,10 @@ aboutMe styles */
     55% { content: 'ABO'; }
     75% { content: 'ABOU'; }
     85% { content: 'ABOUT'; }
-    95% { content: 'ABOUT U'; }
-/* <<<<<<< HEAD */
-    100%  { content:'ABOUT US :'; }}
+    95% { content: 'ABOUT M'; }
+    100%  { content:'ABOUT ME :'; }}
+
+
 
 
     /* the Teams section */
@@ -216,69 +212,16 @@ aboutMe styles */
     background-color: #567983;
 }
 
-.theDragon{
-    text-align: center;
-    font-size: 4rem;
-    font-family: silkscreen;
-}
-
-
-/* .theDragon::after{
-    text-align: center;
-    font-family: silkscreen;
-    animation-name: dragons ;
-    animation-duration: 5s;
-    animation-direction: alternate;
-    animation-timing-function: step-end;
-    animation-fill-mode: forwards;
-    content: ' ';
-
-}
-
-@keyframes dragons{
-    0%   { content: ''; }
-    7.6% { content: 'T'; }
-    15.2%  { content: 'TH'; }
-    22.8% { content: 'THE'; }
-    30.4% { content: 'THE '; }
-    38% { content: 'THE D'; }
-    45.6% { content: 'THE DR'; }
-    53.2%  { content:'THE DRA'; }
-    60.8%  { content:'THE DRAG'; }
-    68.4%  { content:'THE DRAG'; }
-    76%  { content:'THE DRAGO'; }
-    83.6%  { content:'THE DRAGON'; }
-    100%  { content:'THE DRAGONS'; }
-} */
-
-.theTeam{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding-top: 20px;
-}
-
-.theTeam img{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-}
-
-.player1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-}
 
 /* hidden skills */
 
 .hicol .progressBox{
-    width: 50%;
+    width: 70%;
 }
 
 .hiRow{
     padding: 10px;
+    display: -webkit-box;
 }
 
 .leftcol{
@@ -308,7 +251,7 @@ aboutMe styles */
 .progressBar{
     opacity: 0;
     animation: progress 2s ;
-    animation-duration: 2s;
+    animation-duration: s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 }
@@ -323,26 +266,122 @@ aboutMe styles */
     }
 }
 
+/* start skil barr background */
+/* for nejem */
+
 #htmlbg{
     background-color: #2c2c2c;
     height: 20px;
-    width: 80%;
+    width: 85%;
     border-radius: 20px;
 }
 
 #cssbg{
     background-color: #2c2c2c;
     height: 20px;
-    width: 80%;
+    width: 70%;
     border-radius: 20px;
 }
 
 #jsbg{
     background-color: #2c2c2c;
     height: 20px;
-    width: 80%;
+    width: 65%;
     border-radius: 20px;
 }
+
+/* for yassine */
+
+#htmlbg{
+    background-color: #2c2c2c;
+    height: 20px;
+    width: 85%;
+    border-radius: 20px;
+}
+
+#cssbg{
+    background-color: #2c2c2c;
+    height: 20px;
+    width: 70%;
+    border-radius: 20px;
+}
+
+#jsbg{
+    background-color: #2c2c2c;
+    height: 20px;
+    width: 65%;
+    border-radius: 20px;
+}
+
+/* for bilel */
+
+#htmlbgb{
+    background-color: #2c2c2c;
+    height: 20px;
+    width: 50%;
+    border-radius: 20px;
+}
+
+#cssbgb{
+    background-color: #2c2c2c;
+    height: 20px;
+    width: 35%;
+    border-radius: 20px;
+}
+
+#jsbgb{
+    background-color: #2c2c2c;
+    height: 20px;
+    width: 15%;
+    border-radius: 20px;
+}
+
+/* for iheb */
+
+#htmlbg{
+    background-color: #2c2c2c;
+    height: 20px;
+    width: 85%;
+    border-radius: 20px;
+}
+
+#cssbg{
+    background-color: #2c2c2c;
+    height: 20px;
+    width: 70%;
+    border-radius: 20px;
+}
+
+#jsbg{
+    background-color: #2c2c2c;
+    height: 20px;
+    width: 65%;
+    border-radius: 20px;
+}
+
+/* for omar */
+#htmlbg{
+    background-color: #2c2c2c;
+    height: 20px;
+    width: 85%;
+    border-radius: 20px;
+}
+
+#cssbg{
+    background-color: #2c2c2c;
+    height: 20px;
+    width: 70%;
+    border-radius: 20px;
+}
+
+#jsbg{
+    background-color: #2c2c2c;
+    height: 20px;
+    width: 65%;
+    border-radius: 20px;
+}
+
+/* skill bar background end */
 
 body.darkmode--activated{
     #htmlbg{
@@ -366,9 +405,6 @@ body.darkmode--activated{
     font-weight: 600;
 }
 
-#skillsBox{
-    display: none;
-}
 
 .others {
     background-image: url(https://miro.medium.com/v2/resize:fit:679/1*ngNzwrRBDElDnf2CLF_Rbg.gif);
@@ -388,25 +424,24 @@ body.darkmode--activated{
 
 }
 
-#narrative{
-    font-size: 17px;
-    background-color: #1e353c3f;
-    padding: 10px;
-    border-radius: 20px;
-    font-weight: 600;
-    margin-top:15px;
+#photoProfil{
+    width: 100px;
+    height: 600;
+    border: 3px solid black;
 }
 
 .member img{
-    width: 250px;
-    height: 280px;
-    border: 2px solid black;
+    max-width: 500px;
+    max-height: 600px;
 }
+
 .member{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-direction: column;
+    gap: 35px;
 }
 
 .finition{
@@ -713,7 +748,7 @@ gap: 70px;
 
 .project{
     background-color: #567983;
-    padding: 20px 0px;
+    padding: 50px 0px;
 }
 
 

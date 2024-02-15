@@ -1,0 +1,65 @@
+
+.theDragon{
+    text-align: center;
+    font-size: 4rem;
+    font-family: silkscreen;
+}
+
+.theTeam{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+.player1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.theTeam img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.dragon{
+    width: 250px;
+    height: 300px;
+    border-radius: 15px;
+    border: black solid 2px;
+} 
+
+.theDragon::after{
+    text-align: center;
+    font-family: silkscreen;
+    animation-name: dragons ;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-timing-function: step-end;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    content: ' ';
+
+}
+
+@keyframes dragons{
+    0% { content: 'T'; }
+    15.2%  { content: 'TH'; }
+    22.8% { content: 'THE'; }
+    30.4% { content: 'THE '; }
+    38% { content: 'THE D'; }
+    45.6% { content: 'THE DR'; }
+    53.2%  { content:'THE DRA'; }
+    60.8%  { content:'THE DRAG'; }
+    68.4%  { content:'THE DRAG'; }
+    76%  { content:'THE DRAGO'; }
+    83.6%  { content:'THE DRAGON'; }
+    100%  { content:'THE DRAGONS'; }
+} 
+
+.mainNames{
+    text-decoration: none;
+    color: black;
+}
