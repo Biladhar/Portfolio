@@ -280,7 +280,7 @@ aboutMe styles */
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    padding: 60px 0px;
+    padding: 160px
 
 }
 
@@ -295,8 +295,8 @@ aboutMe styles */
 .progressBox .progressBg{
     height: 20px;
     width: 100%;
-    background-color: #d3d3d3;
-    border-radius: 6px;
+    background-color: #f0ebeb;
+    border-radius: 20px;
 }
 
 .progressBar{
@@ -318,24 +318,34 @@ aboutMe styles */
 }
 
 #htmlbg{
-    background-color: #91381f;
+    background-color: #2c2c2c;
     height: 20px;
     width: 80%;
-    border-radius: 6px;
+    border-radius: 20px;
 }
 
 #cssbg{
-    background-color: #94c426;
+    background-color: #2c2c2c;
     height: 20px;
     width: 80%;
-    border-radius: 6px;
+    border-radius: 20px;
 }
 
 #jsbg{
-    background-color: #226abd;
+    background-color: #2c2c2c;
     height: 20px;
     width: 80%;
-    border-radius: 6px;
+    border-radius: 20px;
+}
+
+body.darkmode--activated{
+    #htmlbg{
+    background-color: white ;
+    }#cssbg{
+        background-color: white ;
+    }#jsbg{
+        background-color: white ;
+    }
 }
 
 .meta{
@@ -347,6 +357,7 @@ aboutMe styles */
 .value{
     text-align: right;
     font-size: 16px;
+    font-weight: 600;
 }
 
 #skillsBox{
@@ -368,6 +379,30 @@ aboutMe styles */
     gap: 30px;
     padding: 60px 0;
 }
+
+#narrative{
+    font-size: 22px;
+    background-color: #1e353c3f;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.member img{
+    width: 250px;
+    height: 280px;
+    border: 2px solid black;
+}
+.member{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+/* end of Team section */
 
     /* 100%  { content:'ABOUT US :'; } */
 
