@@ -601,3 +601,134 @@ gap: 70px;
 }
 /* end contact section  */
 
+/* start of projects section */
+
+
+.project{
+    background-color: #567983;
+    padding: 20px 0px;
+}
+
+
+
+img{
+    width: 300px;
+    border-radius: 12px;
+}
+.name{
+    display: flex;
+    justify-content:center ;
+    color: #00ccff;
+    font-family:Silkscreen;
+    height: 60px;
+}
+main{
+    border: 1px #00ccff;
+}    
+.end{
+    display: flex;
+    justify-content: space-around;
+    align-self: normal;
+    flex-wrap: wrap;
+}
+.a{
+    color: #00ccff;;
+    font-family: cursive;
+}
+.box{
+    border-style: ridge;
+    border-color: rgb(255, 255, 255);
+    border: 1px black;
+    box-shadow: 10px 10px 10px  black;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 20px;
+    margin-top: 30px;
+    height: 350px;
+    width: 350px;
+    border-radius: 20px;
+    position: relative;
+    background:black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+
+
+.box::after{
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent,transparent,transparent,#00ccff);
+    animation: animate 4s linear infinite;
+    animation-delay: -2s;
+}
+
+body.darkmode--activated .box::after{
+    background-image:conic-gradient(transparent,transparent,transparent,#db1919) ;
+}
+
+.box::before{
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent,transparent,transparent,#00ccff);
+    animation: animate 4s linear infinite;
+}
+body.darkmode--activated .box::before{
+    background-image: conic-gradient(transparent,transparent,transparent,#ff0000);
+}
+
+
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.name::after{
+    animation-name: dotty ;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    content: '';
+    font-size: 50px;
+}
+
+@keyframes dotty {
+    0%   { content: ''; }
+    10%    { content: 'P'; }
+    20%  { content: 'PR'; }
+    30%  { content: 'PRO'; }
+    40%  { content: 'PROJ'; }
+    50%  { content: 'PROJE'; }
+    60%  { content: 'PROJEC'; }
+    70%  { content: 'PROJECT'; }
+    80%  { content: 'PROJECT. '; }
+    90%  { content: 'PROJECT. . '; }
+    100%  { content: 'PROJECT. . . '; } 
+}
+.box span{
+    position: absolute;
+    inset: 5px;
+    border-radius: 16px;
+    background: #0c1022;
+    z-index: 1; 
+    padding: 20px 20px 20px 20px;
+}
+
+body.darkmode--activated span {
+    background-color: #91381f;
+}
+
+p{
+    color: white;
+}
