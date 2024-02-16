@@ -44,8 +44,11 @@
 
 }
 
+
+
 @keyframes dragons{
-    0% { content: 'T'; }
+    0% { content: '.'; }
+    7.6% { content: 'T'; }
     15.2%  { content: 'TH'; }
     22.8% { content: 'THE'; }
     30.4% { content: 'THE '; }
