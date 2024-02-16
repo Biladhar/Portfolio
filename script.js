@@ -66,3 +66,17 @@ function increase(index){
 //     }else element.style.color="rgb(110, 199, 224)";
 // }
 // end contact section script 
+
+
+
+var imageSource = ["./asset/najem.jpg", "", "./asset/Bilel.jpg", "./asset/iheb.jpg", "./asset/omar.jpg"];
+var K=document.querySelector("#player" + index);
+function switchImg(index){
+    
+    if(K.src="./asset/Dragons/p3.jpg"){
+        K.src=imageSource[index];
+    }else{
+        K.src="./asset/Dragons/p3.jpg";
+    }
+
+}
