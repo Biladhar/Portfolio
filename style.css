@@ -477,20 +477,20 @@ body.darkmode--activated {
         background-image: conic-gradient(transparent,transparent,transparent,#946052);
     }
     #email_box{
-        background-color: #946052;
+        background-color: #91381f ;
         border-color: orangered;
     }
     textarea{
-        background-color: #946052;
+        background-color: #91381f ;
         border-color: orangered;
     }
     #bord{
-        background-color: #946052;
+        background-color: #91381f ;
         border-color: orangered;
     }
     #all_Label{
         color: white;
-        background-color:#946052 ;
+        background-color:#91381f ;
     }
     .btn1{
         color: white;
@@ -759,7 +759,7 @@ img{
 .nameproject{
     display: flex;
     justify-content:center ;
-    color: #000000;
+    color: #212529;
     font-family:Silkscreen;
     height: 60px;
 }
@@ -774,7 +774,9 @@ main{
 }
 .a{
     color: #00ccff;;
-    font-family: cursive;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: 500;
 }
 .box{
     border-style: ridge;
@@ -798,7 +800,7 @@ main{
 }
 
 body.darkmode--activated .box{
-    background-color: gray;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 
@@ -814,7 +816,7 @@ body.darkmode--activated .box{
 }
 
 body.darkmode--activated .box::after{
-    background-image:conic-gradient(transparent,transparent,transparent,#ce0000e6) ;
+    background-image:conic-gradient(transparent,transparent,transparent,#ffffffe6) ;
 }
 
 .box::before{
@@ -826,7 +828,7 @@ body.darkmode--activated .box::after{
     animation: animate 4s linear infinite;
 }
 body.darkmode--activated .box::before{
-    background-image: conic-gradient(transparent,transparent,transparent,#ce0000e6);
+    background-image: conic-gradient(transparent,transparent,transparent,#ffffffe6);
 }
 
 
@@ -840,7 +842,7 @@ body.darkmode--activated .box::before{
     }
 }
 .nameproject::after{
-    animation-name: dotty ;
+    animation-name: myProject;
     animation-duration: 10s;
     animation-fill-mode: forwards;
     content: '';
@@ -851,7 +853,7 @@ body.darkmode--activated .nameproject{
     color: black;
 }
 
-@keyframes dotty {
+@keyframes myProject {
     0%   { content: ''; }
     10%    { content: 'P'; }
     20%  { content: 'PR'; }
@@ -868,12 +870,18 @@ body.darkmode--activated .nameproject{
     position: absolute;
     inset: 5px;
     border-radius: 16px;
-    background: #0c1022;
+    background: #1E353C;
+    color: white;
+    background: #1e353c;
     z-index: 1; 
     padding: 20px 20px 20px 20px;
 }
+
 
 body.darkmode--activated span {
     background-color: #944129;
 }
 
+.whitep{
+    color: white;
+}
