@@ -19,6 +19,7 @@
 .center {
     text-align: center;
     text-shadow: 0 0 20px rgb(80, 137, 156);
+    padding-bottom: 40px;
 }
 .name,.dev{
     color: rgb(15, 14, 14);
@@ -33,15 +34,17 @@
 }
 
 .theTeam img{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+    width: 240px;
+    height: 240px;
+    border-radius: 12px;
+    border: 3px solid cadetblue;
+    box-shadow: 2px 2px  3px cadetblue;
 }
 .dragon{
-    width: 250px;
+    width: 300px;
     height: 300px;
-    border-radius: 15px;
-    border: black solid 2px;
+    border-radius: 12px;
+    border: black solid 5px;
 } 
 
 .theDragon::after{
@@ -78,4 +81,5 @@
 .mainNames{
     text-decoration: none;
     color: black;
+    font-family:"Protest Riot", sans-serif;
 }
