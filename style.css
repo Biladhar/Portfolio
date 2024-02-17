@@ -139,7 +139,7 @@ button a {
 }
 
 button:hover{
-    background-color:hsl(193, 20%, 20%);
+    background-color:hsl(192, 20%, 20%);
 }
 
 .name,.dev{
@@ -157,9 +157,20 @@ button:hover{
 aboutMe styles */
 
 .aboutMe{
-    background-color: #577982;
+    background-color:black;
+    height: 100vh;
+    width: 100vw;
 }
-
+.down_side{
+    display: flex;
+    width: 1200px;
+    align-items: center;
+    justify-content: space-between;
+    img{
+        width: 350px;
+        box-shadow: 8px 8px 20px rgb(123, 215, 221);
+    }
+}
 .contain{
     display: flex;
     flex-direction: column;
@@ -171,14 +182,29 @@ aboutMe styles */
 .contain img{
     border: 2px solid black
 }
-
+body.darkmode--activated{
+    #shadowImg{
+    box-shadow: 8px 8px 20px rgb(121, 25, 25);
+    }
+}
 .description{
+    width: 700px;
+    padding: 10px;
     font-size: 1.5rem;
     font-family: "Protest Riot", sans-serif;
     text-align: center;
-    color: black;
+    font-weight: 100;
+    color: white;
+    font-size: 28px;
+    border: 3px solid  #4896ac;
+    border-radius: 12px;
+    background-color: #25424b;
+    
 }
-
+.title{
+    height: 100px;
+    margin-bottom: 30px;
+}
 .title::after{
     animation-name: Visitor ; 
     /* changer par omar */
@@ -189,7 +215,7 @@ aboutMe styles */
     content: ' ';
     font-family:Silkscreen; 
     font-size: 4rem;
-    color:#212529;
+    color: #6EC7E0;
 }
 @keyframes Visitor{
     0%   { content: ''; }

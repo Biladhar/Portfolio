@@ -70,13 +70,11 @@ function increase(index){
 
 
 var imageSource = ["./asset/najem.jpg", "", "./asset/Bilel.jpg", "./asset/iheb.jpg", "./asset/omar.jpg"];
-var K=document.querySelector("#player" + index);
 function switchImg(index){
-    
-    if(K.src="./asset/Dragons/p3.jpg"){
+    var K=document.querySelector("#player" + index);
+    if(K.src.includes("p3.jpg")){
         K.src=imageSource[index];
     }else{
         K.src="./asset/Dragons/p3.jpg";
     }
-
 }
