@@ -157,9 +157,12 @@ button:hover{
 aboutMe styles */
 
 .aboutMe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color:black;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 .down_side{
     display: flex;
@@ -234,7 +237,11 @@ body.darkmode--activated{
     /* the dragons */
 
 .skill{
+    display: flex;
     background-color: #567983;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -247,6 +254,7 @@ body.darkmode--activated{
 .hiRow{
     padding: 10px;
     display: -webkit-box;
+    align-items: end;
 }
 
 .leftcol{
@@ -538,6 +546,7 @@ body.darkmode--activated {
     a:hover{
         color: orange;
     }
+
 }
 
 
@@ -615,7 +624,7 @@ text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap:3%;
+    gap:6%;
     align-items: center;
     position: relative;
     background-color: #000000;
@@ -623,7 +632,7 @@ text-align: center;
     width: 100%;
 }
 .contact_me{
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 400;
     font-style: normal;
     font-family:Silkscreen;
@@ -660,7 +669,6 @@ overflow: hidden;
         font-family: cursive;
         font-size: 15px;
         padding: 0px 10px;
-        margin-right: 100px;
     }
     .form_contain_detail{
         margin: 7px 0px;
@@ -735,6 +743,7 @@ display: flex;
 width: 300px;
 gap: 10px;
 justify-content: center;
+align-items: center;
 padding: 25px 0px;
 img{
     width: 25px;
@@ -766,6 +775,15 @@ gap: 70px;
 }
 .icon_Img:hover{
     background-color: #38626f;
+}
+.versHaut{
+    position: fixed;
+    left: 30px;
+    bottom: 30px;
+    width: 45px;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 50%;
 }
 /* end contact section  */
 
