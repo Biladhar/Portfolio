@@ -15,7 +15,7 @@
 }
 
 .theDragon{
-    text-align: center;
+    text-align: center; 
     font-size: 5rem;
     font-family: silkscreen;
     height: 180px;
@@ -60,7 +60,6 @@
     height: 300px;
     border-radius: 12px;
     border: rgb(255, 250, 250) solid 5px;
-
 } 
 
 .theDragon::after{
@@ -73,7 +72,6 @@
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
     content: ' ';
-
 }
 
 
