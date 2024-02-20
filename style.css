@@ -537,10 +537,10 @@ body.darkmode--activated {
     button.btn1:hover{
         background-color: orange;
     }
-    .icon_Img2:hover{
+    #icon_Img2:hover{
         background-color: #946052;
     }
-    .icon_Img:hover{
+    #icon_Img:hover{
         background-color: #946052;
     }
     a:hover{
@@ -761,19 +761,19 @@ a:hover{
 .contact_icon{
 display: flex;
 gap: 70px;
-.icon_Img{
+#icon_Img{
     width: 70px;
     height: 60px;
 }
-.icon_Img2{
+#icon_Img2{
     width: 90px;
     height: 66px;
 }
 }
-.icon_Img2:hover{
+#icon_Img2:hover{
     background-color: #38626F;
 }
-.icon_Img:hover{
+#icon_Img:hover{
     background-color: #38626F;
 }
 .versHaut{
