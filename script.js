@@ -69,7 +69,7 @@ function changeImg(element){
 
 
 
-var imageSource = ["./asset/najem.jpg", "", "./asset/Bilel.jpg", "./asset/iheb.jpg", "./asset/omar.jpg"];
+var imageSource = ["./asset/najem.jpg", "./asset/yassine.jpg", "./asset/Bilel.jpg", "./asset/iheb.jpg", "./asset/omar.jpg"];
 function switchImg(index){
     var K=document.querySelector("#player" + index);
     if(K.src.includes("p3.jpg")){
